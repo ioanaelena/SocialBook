@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.LoginPageController">
+   <center>
+      <AnchorPane prefHeight="543.0" prefWidth="700.0" style="-fx-background-color: #f2b9e8;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="110.0" layoutY="126.0" prefHeight="374.0" prefWidth="480.0" style="-fx-background-color: #fcf7f7;">
+               <children>
+                  <TextField fx:id="username" layoutX="149.0" layoutY="96.0" prefHeight="36.0" prefWidth="182.0" promptText="username" style="-fx-background-color: transparent; -fx-border-color: #f8cde8; -fx-border-width: 0px 0px 2px 0px;" />
+                  <PasswordField fx:id="password" layoutX="147.0" layoutY="149.0" prefHeight="38.0" prefWidth="186.0" promptText="password" style="-fx-background-color: transparent; -fx-border-color: #f8cde8; -fx-border-width: 0px 0px 2px 0px;" />
+                  <Button fx:id="login" layoutX="186.0" layoutY="222.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="42.0" prefWidth="108.0" style="-fx-background-color: #f8cde8;" text="Login" textFill="#0d0d0d" />
+                  <Button fx:id="createaccount" layoutX="185.0" layoutY="287.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="111.0" style="-fx-background-color: #f8cde8;" text="CreateAccount" />
+                  <Label fx:id="wrongLogin" layoutX="347.0" layoutY="235.0" text="Label" />
+               </children>
+            </AnchorPane>
+            <Text layoutX="226.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SocialBook" wrappingWidth="247.9830722808838">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
